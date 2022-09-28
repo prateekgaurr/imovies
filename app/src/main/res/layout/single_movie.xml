@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/movie_image_cardview"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:maxWidth="120dp"
+        android:text="Wonder Woman 1984"
+        android:textSize="13sp
+"
+        app:layout_constraintEnd_toEndOf="@+id/movie_image_cardview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/movie_image_cardview"
+        app:layout_constraintTop_toBottomOf="@+id/movie_image_cardview" />
+
+    <TextView
+        android:id="@+id/movie_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="(2020)"
+        app:layout_constraintStart_toStartOf="@+id/movie_name"
+        app:layout_constraintTop_toBottomOf="@+id/movie_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
