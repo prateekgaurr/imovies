@@ -1,4 +1,4 @@
-package com.prateek.imovies.ui;
+package com.prateek.imovies.ui.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.prateek.imovies.ui;
+package com.prateek.imovies.ui.adapters;
 
 
 import android.content.Context;
@@ -19,12 +19,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CategoriesAdapterNew extends RecyclerView.Adapter<CategoriesAdapterNew.ViewHolder> {
+public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.ViewHolder> {
     private final HashMap<String, String> categoryIdToCategoryName;
     private final Context context;
     private final Map<String, List<Movie>> categoryIdToMoviesList;
 
-    public CategoriesAdapterNew(Context context, HashMap<String, String> categoryMap, Map<String, List<Movie>> movies) {
+    public CategoriesAdapter(Context context, HashMap<String, String> categoryMap, Map<String, List<Movie>> movies) {
         this.categoryIdToCategoryName = categoryMap;
         this.context = context;
         this.categoryIdToMoviesList = movies;
